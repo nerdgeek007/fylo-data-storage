@@ -7,6 +7,10 @@
 	padding: 0;
 }
 
+html {
+	height: -webkit-fill-available;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
@@ -124,7 +128,11 @@ body {
 
 /* media queries */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+	body {
+		min-height: 100vh;
+		overflow: hidden;
+	}
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -133,20 +141,20 @@ body {
 	}
 	.right-content {
 		margin-bottom: 30px;
-		width: 330px;
-		height: 170px;
+		max-width: 330px;
+		max-height: 170px;
 	}
 	.right-content .logo {
 		padding-top: 30px;
 		padding-left: 30px;
 	}
 	.data {
-		right: 140px;
-		top: 120px;
+		right: 120px;
+		top: 100px;
 	}
 	.left-content {
-		width: 330px;
-		height: 150px;
+		max-width: 330px;
+		min-height: 110px;
 	}
 	.left-content .slider {
 		width: 300px;
