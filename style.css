@@ -29,7 +29,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
+/* right content */
 .right-content {
 	width: 250px;
 	height: 140px;
@@ -55,6 +55,7 @@ body {
 	padding: 10px;
 	border-radius: 5px;
 }
+/* left  content */
 .left-content {
 	width: 400px;
 	height: 100px;
